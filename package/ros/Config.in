@@ -1,8 +1,3 @@
-config BR2_PACKAGE_GLIBC_FOR_ROS
-	bool "ROS: select glibc inside the Toolchain"
-	depends on ! BR2_TOOLCHAIN_USES_GLIBC
-	default y
-
 menuconfig BR2_PACKAGE_ROS
 	bool "ROS: Robot OS"
 	depends on BR2_TOOLCHAIN_USES_GLIBC
@@ -11,7 +6,7 @@ menuconfig BR2_PACKAGE_ROS
 config BR2_PACKAGE_ROS_INSTALL_PREFIX
 	depends on BR2_PACKAGE_ROS
 	string "ROS: installation directory"
-	default: /opt/ros
+	default /opt/ros
 
 menuconfig BR2_PACKAGE_ROS_DEVTOOLS
 	bool "devtools: Host tools for ROS distribution"
