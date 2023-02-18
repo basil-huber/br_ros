@@ -1,6 +1,0 @@
-config BR2_PACKAGE_PYTHON_PBR
-	bool "python-pbr"
-	help
-	  Python Build Reasonableness.
-
-	  https://docs.openstack.org/pbr/latest/

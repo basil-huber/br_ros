@@ -13,7 +13,6 @@ PYTHON_CATKIN_PKG_LICENSE = FIXME: please specify the exact BSD version
 PYTHON_CATKIN_PKG_DEPENDENCIES +=  python-pyparsing
 PYTHON_CATKIN_PKG_DEPENDENCIES +=  python-dateutil
 HOST_PYTHON_CATKIN_PKG_DEPENDENCIES +=  host-python-pyparsing-host
-HOST_PYTHON_CATKIN_PKG_DEPENDENCIES +=  host-python-dateutil-host
 
 $(eval $(python-package))
 $(eval $(host-python-package))

@@ -9,7 +9,7 @@ GENPY_SITE = https://github.com/ros/genpy/archive
 GENPY_LICENSE = BSD3
 GENPY_LICENSE_FILES = LICENSE
 GENPY_INSTALL_STAGING=YES
-GENPY_DEPENDENCIES+=host-python-pyyaml-host
+GENPY_DEPENDENCIES+=host-python-pyyaml
 GENPY_DEPENDENCIES+=genmsg
 
 ROS_INSTALL_PREFIX=/opt/ros

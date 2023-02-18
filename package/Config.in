@@ -1,20 +1,11 @@
-source "$BR2_EXTERNAL_ROS_PATH/package/zziplib/Config.in"
-source "$BR2_EXTERNAL_ROS_PATH/package/ogre/Config.in"
-
 menu "Python Host packages"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-pyparsing-host/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-pyyaml-host/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-dateutil-host/Config.in"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-numpy-host/Config.in"
 endmenu
 
 menu "Python packages"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-empy/Config.in"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-bson/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-defusedxml/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-future/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-gnupg/Config.in"
-	source "$BR2_EXTERNAL_ROS_PATH/package/python-pbr/Config.in"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-vcstools/Config.in"
 	source "$BR2_EXTERNAL_ROS_PATH/package/python-wstool/Config.in"
 endmenu
