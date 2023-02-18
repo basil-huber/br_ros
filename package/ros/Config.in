@@ -1,7 +1,7 @@
 menuconfig BR2_PACKAGE_ROS
 	bool "ROS: Robot OS"
 	depends on BR2_TOOLCHAIN_USES_GLIBC
-	select BR2_PACKAGE_PYTHON
+	select BR2_PACKAGE_PYTHON3
 
 config BR2_PACKAGE_ROS_INSTALL_PREFIX
 	depends on BR2_PACKAGE_ROS
