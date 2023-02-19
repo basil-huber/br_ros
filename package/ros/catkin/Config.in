@@ -6,6 +6,8 @@ config BR2_PACKAGE_CMAKE_FOR_CATKIN
 	select BR2_PACKAGE_LIBCURL
 	select BR2_PACKAGE_LIBARCHIVE
 	select BR2_PACKAGE_JSONCPP
+	select BR2_PACKAGE_BZIP2  # This seems to be a forgotten dependency in cmake
+	select BR2_PACKAGE_EXPAT  # This seems to be a forgotten dependency in cmake
 	select BR2_PACKAGE_CMAKE
 
 config BR2_PACKAGE_CATKIN
