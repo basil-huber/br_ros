@@ -3,7 +3,7 @@
 # class_loader
 #
 ################################################################################
-CLASS_LOADER_VERSION = 0.4.1
+CLASS_LOADER_VERSION = 0.5.0
 CLASS_LOADER_SOURCE = $(CLASS_LOADER_VERSION).tar.gz
 CLASS_LOADER_SITE = https://github.com/ros/class_loader/archive
 CLASS_LOADER_LICENSE = BSD3
