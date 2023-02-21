@@ -1,6 +1,6 @@
-From 64d33f250beaeb375cc1c93226c2b45a746d51c2 Mon Sep 17 00:00:00 2001
-From: Dmitry Rozhkov <dmitry.rozhkov@linux.intel.com>
-Date: Thu, 27 Apr 2017 11:04:27 +0300
+From 0ac014653f46fdd6fae663822f9df70e37bce995 Mon Sep 17 00:00:00 2001
+From: Basil Huber <b.huber@gmail.com>
+Date: Mon, 20 Feb 2023 07:39:57 +0100
 Subject: [PATCH] ignore LD_LIBRARY_PATH set in environment_cache.py
 
 The script environment_cache.py generates a cache file that
@@ -24,23 +24,27 @@ Don't put LD_LIBRARY_PATH to the cache, but use the value provided
 by bitbake.
 
 Upstream-Status: Inappropriate [upstream doesn't use bitbake and the change may break on-target development]
-
-Signed-off-by: Dmitry Rozhkov <dmitry.rozhkov@linux.intel.com>
-
 ---
- python/catkin/environment_cache.py | 3 ++-
- 1 file changed, 2 insertions(+), 1 deletion(-)
+ python/catkin/environment_cache.py | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
 
 diff --git a/python/catkin/environment_cache.py b/python/catkin/environment_cache.py
-index 3defa52..dba2c50 100755
+index ff515be..61fdb7c 100644
 --- a/python/catkin/environment_cache.py
 +++ b/python/catkin/environment_cache.py
-@@ -112,6 +112,7 @@ def _append_comment(code, value):
+@@ -116,8 +116,9 @@ def _append_comment(code, value):
  
  def _set_variable(code, key, value):
      if _is_not_windows():
--        code.append('export %s="%s"' % (key, value))
+-        if not value.startswith('"') or not value.endswith('"'):
+-            value = "'%s'" % value
+-        code.append('export %s=%s' % (key, value))
 +        if key != "LD_LIBRARY_PATH":
-+            code.append('export %s="%s"' % (key, value))
++            if not value.startswith('"') or not value.endswith('"'):
++                value = "'%s'" % value
++            code.append('export %s=%s' % (key, value))
      else:
          code.append('set %s=%s' % (key, value))
+-- 
+2.34.1
+

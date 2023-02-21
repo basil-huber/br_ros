@@ -7,7 +7,7 @@
 #CATKIN_VERSION = kinetic-devel
 #CATKIN_SITE = https://github.com/ros/catkin.git
 #CATKIN_SITE_METHOD=git
-CATKIN_VERSION = 0.7.18
+CATKIN_VERSION = 0.8.10
 CATKIN_SOURCE = $(CATKIN_VERSION).tar.gz
 CATKIN_SITE = https://github.com/ros/catkin/archive
 CATKIN_LICENSE = BSD3
