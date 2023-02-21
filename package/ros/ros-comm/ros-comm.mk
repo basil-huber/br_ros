@@ -3,7 +3,7 @@
 # ros-comm
 #
 ################################################################################
-ROS_COMM_VERSION = 1.14.3
+ROS_COMM_VERSION = 1.16.0
 ROS_COMM_SOURCE = $(ROS_COMM_VERSION).tar.gz
 ROS_COMM_SITE = https://github.com/ros/ros_comm/archive
 ROS_COMM_LICENSE = BSD3
