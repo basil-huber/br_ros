@@ -3,7 +3,7 @@
 # ros-actionlib
 #
 ################################################################################
-ROS_ACTIONLIB_VERSION = 1.11.13
+ROS_ACTIONLIB_VERSION = 1.14.0
 ROS_ACTIONLIB_SOURCE = $(ROS_ACTIONLIB_VERSION).tar.gz
 ROS_ACTIONLIB_SITE = https://github.com/ros/actionlib/archive
 ROS_ACTIONLIB_LICENSE = BSD3

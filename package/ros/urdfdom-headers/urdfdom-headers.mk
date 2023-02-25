@@ -3,7 +3,7 @@
 # urdfdom-headers
 #
 ################################################################################
-URDFDOM_HEADERS_VERSION = 1.0.4
+URDFDOM_HEADERS_VERSION = 1.1.0
 URDFDOM_HEADERS_SOURCE = $(URDFDOM_HEADERS_VERSION).tar.gz
 URDFDOM_HEADERS_SITE = https://github.com/ros/urdfdom_headers/archive
 URDFDOM_HEADERS_LICENSE = BSD3

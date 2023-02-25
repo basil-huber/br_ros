@@ -3,7 +3,7 @@
 # genmsg
 #
 ################################################################################
-GENMSG_VERSION = 0.5.12
+GENMSG_VERSION = 0.6.0
 GENMSG_SOURCE = $(GENMSG_VERSION).tar.gz
 GENMSG_SITE = https://github.com/ros/genmsg/archive
 GENMSG_LICENSE = BSD3

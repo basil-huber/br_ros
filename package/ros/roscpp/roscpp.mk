@@ -1,4 +1,4 @@
-ROSCPP_VERSION = 0.6.12
+ROSCPP_VERSION = 0.7.2
 ROSCPP_SOURCE = $(ROSCPP_VERSION).tar.gz
 ROSCPP_SITE = https://github.com/ros/roscpp_core/archive
 ROSCPP_LICENSE = BSD3

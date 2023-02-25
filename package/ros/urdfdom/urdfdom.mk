@@ -3,7 +3,7 @@
 # urdfdom
 #
 ################################################################################
-URDFDOM_VERSION = 1.0.3
+URDFDOM_VERSION = 3.0.2
 URDFDOM_SOURCE = $(URDFDOM_VERSION).tar.gz
 URDFDOM_SITE = https://github.com/ros/urdfdom/archive
 URDFDOM_LICENSE = BSD3

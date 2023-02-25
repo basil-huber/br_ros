@@ -3,7 +3,7 @@
 # genlisp
 #
 ################################################################################
-GENLISP_VERSION = 0.4.16
+GENLISP_VERSION = 0.4.18
 GENLISP_SOURCE = $(GENLISP_VERSION).tar.gz
 GENLISP_SITE = https://github.com/ros/genlisp/archive
 GENLISP_LICENSE = BSD3

@@ -1,4 +1,4 @@
-URDF_VERSION = 1.13.1
+URDF_VERSION = 1.13.2
 URDF_SOURCE = $(URDF_VERSION).tar.gz
 URDF_SITE = https://github.com/ros/urdf/archive
 URDF_LICENSE = BSD3

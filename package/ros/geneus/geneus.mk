@@ -3,7 +3,7 @@
 # gencpp
 #
 ################################################################################
-GENEUS_VERSION = 2.2.6
+GENEUS_VERSION = 3.0.0
 GENEUS_SOURCE = $(GENEUS_VERSION).tar.gz
 GENEUS_SITE = https://github.com/jsk-ros-pkg/geneus/archive
 GENEUS_LICENSE = BSD3

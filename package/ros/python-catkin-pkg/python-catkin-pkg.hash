@@ -1,3 +1,3 @@
 # md5, sha256 from https://pypi.org/pypi/catkin_pkg/json
-md5	e5103b99a66a74ca7e5104542a897de2  catkin_pkg-0.4.12.tar.gz
-sha256	77fdfdcf79b1b92498c83eede9ef727e9c6eeec5b0a5e49c0ce83b8caa0afb36  catkin_pkg-0.4.12.tar.gz
+md5	48c468c93a5a2a1ecdf77c5fa00eda75  catkin_pkg-0.5.2.tar.gz
+sha256	5d643eeafbce4890fcceaf9db197eadf2ca5a187d25593f65b6e5c57935f5da2  catkin_pkg-0.5.2.tar.gz

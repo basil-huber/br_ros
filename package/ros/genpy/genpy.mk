@@ -3,7 +3,7 @@
 # genpy
 #
 ################################################################################
-GENPY_VERSION = 0.6.8
+GENPY_VERSION = 0.6.16
 GENPY_SOURCE = $(GENPY_VERSION).tar.gz
 GENPY_SITE = https://github.com/ros/genpy/archive
 GENPY_LICENSE = BSD3

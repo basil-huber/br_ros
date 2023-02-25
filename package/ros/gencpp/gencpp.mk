@@ -3,7 +3,7 @@
 # gencpp
 #
 ################################################################################
-GENCPP_VERSION = 0.6.2
+GENCPP_VERSION = 0.7.0
 GENCPP_SOURCE = $(GENCPP_VERSION).tar.gz
 GENCPP_SITE = https://github.com/ros/gencpp/archive
 GENCPP_LICENSE = BSD3
