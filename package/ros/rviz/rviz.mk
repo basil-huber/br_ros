@@ -3,7 +3,7 @@
 # rviz
 #
 ################################################################################
-RVIZ_VERSION = 1.13.3
+RVIZ_VERSION = 1.14.19
 RVIZ_SOURCE = $(RVIZ_VERSION).tar.gz
 RVIZ_SITE = https://github.com/ros-visualization/rviz/archive
 RVIZ_LICENSE = BSD3

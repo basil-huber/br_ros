@@ -3,7 +3,7 @@
 # ros-vision_opencv
 #
 ################################################################################
-ROS_VISION_OPENCV_VERSION = 1.11.13
+ROS_VISION_OPENCV_VERSION = 1.16.2
 ROS_VISION_OPENCV_SOURCE = $(ROS_VISION_OPENCV_VERSION).tar.gz
 ROS_VISION_OPENCV_SITE = https://github.com/ros-perception/vision_opencv/archive
 ROS_VISION_OPENCV_LICENSE = BSD3

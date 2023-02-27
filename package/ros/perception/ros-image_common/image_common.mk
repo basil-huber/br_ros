@@ -3,7 +3,7 @@
 # ros-image_common
 #
 ################################################################################
-ROS_IMAGE_COMMON_VERSION = 1.11.13
+ROS_IMAGE_COMMON_VERSION = 1.12.0
 ROS_IMAGE_COMMON_SOURCE = $(ROS_IMAGE_COMMON_VERSION).tar.gz
 ROS_IMAGE_COMMON_SITE = https://github.com/ros-perception/image_common/archive
 ROS_IMAGE_COMMON_LICENSE = BSD3

@@ -3,7 +3,7 @@
 # ros-image_common
 #
 ################################################################################
-ROS_IMAGE_PIPELINE_VERSION = 1.13.0
+ROS_IMAGE_PIPELINE_VERSION = 1.17.0
 ROS_IMAGE_PIPELINE_SOURCE = $(ROS_IMAGE_PIPELINE_VERSION).tar.gz
 ROS_IMAGE_PIPELINE_SITE = https://github.com/ros-perception/image_pipeline/archive
 ROS_IMAGE_PIPELINE_LICENSE = BSD3
