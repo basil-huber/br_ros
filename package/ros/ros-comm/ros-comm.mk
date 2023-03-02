@@ -23,7 +23,7 @@ ROS_COMM_SUBDIR+=ros_comm
 
 define ROS_COMM_FINAL_INSTALL_PYTHON3
 	$(INSTALL) -D -m 0755 $(ROS_COMM_PKGDIR)/profile-ros.sh $(TARGET_DIR)/etc/profile.d
-	$(SED) "s,@ROS_INSTALL_PREFIX@,$(BR2_PACKAGE_ROS_INSTALL_PREFIX:"%"=%),g" -e "s,@PYTHON_VERSION_SUFFIX@,,g" $(TARGET_DIR)/etc/profile.d/profile-ros.sh
+	$(SED) "s,@ROS_INSTALL_PREFIX@,$(BR2_PACKAGE_ROS_INSTALL_PREFIX:"%"=%),g" -e "s,@PYTHON_VERSION_SUFFIX@,$(PYTHON3_VERSION_MAJOR),g" $(TARGET_DIR)/etc/profile.d/profile-ros.sh
 endef
 define ROS_COMM_FINAL_INSTALL_PYTHON
 	$(INSTALL) -D -m 0755 $(ROS_COMM_PKGDIR)/profile-ros.sh $(TARGET_DIR)/etc/profile.d
