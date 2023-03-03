@@ -1,0 +1,28 @@
+From 6cbdadd0d4e5794534938039e7b9a6d976d309aa Mon Sep 17 00:00:00 2001
+From: Basil Huber <b.huber@gmail.com>
+Date: Fri, 3 Mar 2023 09:43:19 +0100
+Subject: [PATCH] Replace wrappers with actual files
+
+---
+ cmake/catkin_install_python.cmake | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/cmake/catkin_install_python.cmake b/cmake/catkin_install_python.cmake
+index 2f6cb5c..b0bc93a 100644
+--- a/cmake/catkin_install_python.cmake
++++ b/cmake/catkin_install_python.cmake
+@@ -69,10 +69,7 @@ function(catkin_install_python signature)
+       if(NOT IS_ABSOLUTE ${ARG_DESTINATION})
+         message(STATUS "Installing devel-space wrapper ${source_file} to ${CATKIN_DEVEL_PREFIX}/${ARG_DESTINATION}")
+         # Create wrapper in devel space that uses source_file with correct shebang
+-        set(PYTHON_SCRIPT ${source_file})
+-        atomic_configure_file(${catkin_EXTRAS_DIR}/templates/script.py.in
+-          ${CATKIN_DEVEL_PREFIX}/${ARG_DESTINATION}/${name}
+-          @ONLY)
++	file(COPY ${source_file} DESTINATION ${CATKIN_DEVEL_PREFIX}/${ARG_DESTINATION})
+ 
+         # Hook for a platform specific wrapper around the modified python script
+         add_python_executable(SCRIPT_NAME ${name}
+-- 
+2.34.1
+
