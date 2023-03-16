@@ -1,0 +1,29 @@
+From 5bfcb8ad073a01c6c1c3a7789ebe14744fc10811 Mon Sep 17 00:00:00 2001
+From: Basil Huber <b.huber@gmail.com>
+Date: Thu, 16 Mar 2023 14:59:53 +0100
+Subject: [PATCH] copies module's __init__.py instead of creating a relay file
+
+This replaces patch 0001-cmake-python-setup-install-normaly-__init__.py
+---
+ cmake/catkin_python_setup.cmake | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/cmake/catkin_python_setup.cmake b/cmake/catkin_python_setup.cmake
+index e360706..dcb3c05 100644
+--- a/cmake/catkin_python_setup.cmake
++++ b/cmake/catkin_python_setup.cmake
+@@ -82,9 +82,9 @@ function(catkin_python_setup)
+       endif()
+       get_filename_component(path ${pkg_dir} PATH)
+       set(PACKAGE_PYTHONPATH ${CMAKE_CURRENT_SOURCE_DIR}/${path})
+-      configure_file(${catkin_EXTRAS_DIR}/templates/__init__.py.in
++      configure_file(${PACKAGE_PYTHONPATH}/${pkg}/__init__.py
+         ${CATKIN_DEVEL_PREFIX}/${PYTHON_INSTALL_DIR}/${pkg}/__init__.py
+-        @ONLY)
++	COPYONLY)
+     endforeach()
+   endif()
+ 
+-- 
+2.34.1
+
